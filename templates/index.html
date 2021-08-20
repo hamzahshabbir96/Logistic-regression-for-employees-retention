@@ -1,0 +1,263 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style1.css' %}">
+
+
+    <!-- Style -->
+    <title>
+        Will Employee stay?
+    </title>
+  </head>
+  <body>
+
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+
+
+    <div class="site-navbar-wrap">
+      <div class="site-navbar-top">
+        <div class="container py-3">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div class="d-flex mr-auto">
+                <a href="#" class="d-flex align-items-center mr-4">
+
+                    <img src="{% static 'images/email.png' %}" width="15" height="15" class="d-inline-block align-top rounded-circle" alt="" mt-2>
+                  <span class="d-none d-md-inline-block ml-2">hamzahshabbir7@gmail.com</span>
+                </a>
+                <a href="#" class="d-flex align-items-center mr-auto">
+
+                    <img src="{% static 'images/phone.png' %}" width="15" height="15" class="d-inline-block align-top rounded-circle" alt="" mt-2>
+
+                  <span class="d-none d-md-inline-block ml-2">+49 176 86591409</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 text-right">
+              <div class="mr-auto">
+                <a href="https://github.com/hamzahshabbir96" class="p-2 pl-0"><img src="{% static 'images/github.png' %}" width="25" height="25" class="d-inline-block align-top rounded-circle" alt="" mt-2></a>
+                <a href="https://stackoverflow.com/users/16555815/hamzah-shabbir" class="p-2 pl-0"><img src="{% static 'images/stack.png' %}" width="25" height="25" class="d-inline-block align-top rounded-circle" alt="" mt-2></a>
+                <a href="https://www.linkedin.com/in/hamzah-shabbir-108765a5/" class="p-2 pl-0"><img src="{% static 'images/linkedin.png' %}" width="25" height="25" class="d-inline-block align-top rounded-circle" alt="" mt-2></a>
+                <a href="https://www.linkedin.com/in/hamzah-shabbir-108765a5/" class="p-2 pl-0"><img src="{% static 'images/hamzah.png' %}" width="25" height="25" class="d-inline-block align-top rounded-circle" alt="" mt-2></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-navbar site-navbar-target js-sticky-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <h1 class="my-0"><a href="{% url 'index' %}">Employee retention forecast</a></h1>
+            </div>
+            <div class="col-6">
+              <nav class="site-navigation text-right" role="navigation">
+                <div class="container">
+                  <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+                  <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
+                    <li class="active"><a href="{% url 'index' %}" class="nav-link">Home</a></li>
+                      <li class="active"><a href="https://github.com/hamzahshabbir96?tab=repositories" class="nav-link">Projects</a></li>
+                    <li class="has-children active">
+                      <a href="" class="nav-link">Credits</a>
+                      <ul class="dropdown arrow-bottom">
+                        <li><a href="https://scikit-learn.org/stable/" class="nav-link">Scikit-Learn</a></li>
+                        <li><a href="https://www.heroku.com/" class="nav-link">Heroku</a></li>
+                        <li><a href="https://www.djangoproject.com/" class="nav-link">Django Framework</a></li>
+                          <li><a href="https://unsplash.com/@tjerwin" class="nav-link">Wallpaper ín this webpage</a></li>
+
+
+
+
+
+
+
+                      </ul>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/hamzah-shabbir-108765a5/" class="nav-link">Contact</a></li>
+
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero" style="background-image: url('{% static 'images/pic2.jpg' %}');"></div>
+
+
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.sticky.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+
+  </body>
+
+
+<div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2>About this Web application</h2>
+          <p> This web application will try to predict whether an employee will stay or leave a company based on data of employee. This application will ask to put some input of employee which have impact on outcome based on historical data.  </p>
+            <a href="https://github.com/hamzahshabbir96"><button class="btn btn-outline-light" type="button">Similar projects</button></a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>About the algorithm</h2>
+          <p>Logistic regression is the appropriate regression analysis to conduct when the dependent variable is binary. In logistic regression, analysis is focussed on predicting a state. In this algorithm dependent features are trained to get relation between dependent variables with the variable to be predicted.</p>
+            <a href="https://github.com/hamzahshabbir96/Logistic-regression-for-employees-retention.git"><button class="btn btn-outline-secondary" type="button" >Go to Project repository</button></a>
+        </div>
+      </div>
+    </div>
+
+
+
+<form method="post" action="{% url 'index' %}">
+  {% csrf_token %}
+  <div class="form-group mt-4">
+    <label for="exampleFormControlInput1">Name of Person</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Employee name" name="person_name">
+  </div>
+    <div class="form-group mt-4">
+    <label for="location">Current location</label>
+    <select class="form-control" id="location" name="location">
+      <option selected>Choose from option</option>
+        <option value="7">Chennai</option>
+        <option value="6">Noida</option>
+        <option value="5">Bangalore</option>
+        <option value="4">Hydrabad</option>
+        <option value="3">Pune</option>
+        <option value="2">Madurai</option>
+        <option value="1">Other Place</option>
+    </select>
+  </div>
+    <div class="form-group mt-4">
+    <label for="group">Employeee group</label>
+    <select class="form-control" id="group" name="group">
+
+        <option selected>Choose from option</option>
+        <option value="B1">B1</option>
+        <option value="B2">B2</option>
+        <option value="B3">B3</option>
+        <option value="other group">Other Group</option>
+    </select>
+  </div>
+
+<div class="form-group mt-4">
+    <label for="func">Working function</label>
+    <select class="form-control" id="func" name="func">
+      <option selected>Choose from option</option>
+        <option value="Support">Support</option>
+        <option value="Operation">Operation</option>
+        <option value="Sales">Sales</option>
+    </select>
+  </div>
+
+<div class="form-group mt-4">
+    <label for="gend">Gender</label>
+    <select class="form-control" id="gend" name="gend">
+        <option selected>Choose from option</option>
+        <<option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="other">Other</option>
+    </select>
+  </div>
+
+
+    <div class="form-group mt-4">
+    <label for="ten">Tenure group</label>
+    <select class="form-control" id="ten" name="ten">
+        <option selected>Choose from option</option>
+       <option value="< =1">< =1 (in years)</option>
+        <option value="> 1 & < =3">> 1 & < =3 (in years)</option>
+    </select>
+  </div>
+
+    <div class="form-group mt-4">
+    <label for="exp">Experience in Industry(years)</label>
+    <<input type="text" class="form-control" id="exp" placeholder="2" name="exp">
+  </div>
+
+<div class="form-group mt-4">
+    <label for="age">Age (years)</label>
+    <input type="text" class="form-control" id="age" placeholder="29" name="age">
+  </div>
+
+<div class="form-group mt-4">
+    <label for="mar">Marital Status</label>
+    <select class="form-control" id="mar" name="mar">
+        <option selected>Choose from options</option>
+        <option value="Marr.">Married</option>
+        <option value="Single">Single</option>
+        <option value="Other status">Other status</option>
+    </select>
+  </div>
+
+    <div class="form-group mt-4">
+    <label for="hir">Source of hiring</label>
+    <select class="form-control" id="hir" name="hir">
+        <option selected>Choose from options</option>
+        <option value="Agency">Agency</option>
+        <option value="Direct">Direct</option>
+        <option value="Employee Referral">Employee Referral</option>
+    </select>
+  </div>
+
+
+     <div class="form-group mt-4">
+    <label for="pro">Have promoted before</label>
+    <select class="form-control" id="pro" name="pro">
+        <option selected>Choose from options</option>
+        <option value="1">Promoted</option>
+        <option value="0">Not Promoted</option>
+    </select>
+  </div>
+ <div class="form-group mt-4">
+    <label for="mat">Does the Job Role matches according to employee:</label>
+    <select class="form-control" id="mat" name="mat">
+        <option selected>Choose from options</option>
+        <option value="1">Job Role matches</option>
+        <option value="0">Job Role does not match</option>
+    </select>
+  </div>
+
+
+
+
+
+
+  <div class="form-group mt-4">
+    <button type="submit" class="btn btn-primary mb-2" name="submit1">Predict Retention</button>
+  </div>
+</form>
+
+
+</html>
+
